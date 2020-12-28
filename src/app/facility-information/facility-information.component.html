@@ -1,0 +1,75 @@
+<main>
+  <section class="topsection facilitiessection"> 
+  	<div class="pageinnertab">
+  		<ul>
+  			<li><a routerLink="/dashboard/alerts-notifications" routerLinkActive="active">Alerts + Notifications</a></li>
+  			<li><a routerLink="/dashboard/short-term-schedule" routerLinkActive="active">Short Term Schedule</a></li>
+  			<li><a routerLink="/dashboard/long-term-schedule" routerLinkActive="active">Long Term Schedule</a></li>
+  			<li><a routerLink="/dashboard/facility-information" routerLinkActive="active">Facility Information</a></li>
+  		</ul>
+  	</div>
+  	
+	<div class="row mt-4">
+		<div class="col-md-7 mb-4">
+  			<div class="shorttermmsg">
+		  		<div class="alertleft facilityinfo">
+		    		<h1>Facility & Safety Information </h1>   
+		    		<div class="form-group">
+					    <label>Message</label>
+					    <textarea class="form-control" ></textarea>
+					</div>
+		    	</div>	
+		    </div>	
+		</div>
+
+  		<div class="col-md-5">
+  			<div class="shorttermmsg mb-4">
+		  		<div class="alertleft facilityinfo">
+		    		<h1>Facility Contact</h1>  
+		    		<div class="form-group">
+					    <label>information</label>
+					    <input type="text" class="form-control" >
+					</div> 
+		    		<div class="form-group">
+					    <label>Phone</label>
+					    <input type="number" class="form-control" >
+					</div>
+		    		<div class="form-group">
+					    <label>Phone</label>
+					    <input type="email" class="form-control" >
+					</div>
+		    	</div>	
+		    </div>	
+		    <div class="shorttermmsg mb-4">
+		  		<div class="alertleft facilityinfo">
+		    		<h1>More information</h1>  
+		    		<ul class="moreinfolist">
+		    			<li>
+		    				<p><b>Outflow from Blu...</b></p>
+		    				<p>Approx. 11-hour travel...</p>
+		    				<label ngbDropdown>
+					          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+					          <div ngbDropdownMenu>
+					            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+					            <a ngbDropdownItem class="dropdown-item" href="#">Delete</a>
+					          </div>
+		  					</label>
+		    			</li>
+		    			<li>
+		    				<p><b>Outflow from Blu...</b></p>
+		    				<p>Approx. 11-hour travel...</p>
+		    				<label ngbDropdown>
+					          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+					          <div ngbDropdownMenu>
+					            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+					            <a ngbDropdownItem class="dropdown-item" href="#">Delete</a>
+					          </div>
+		  					</label>
+		    			</li>
+		    		</ul>
+		    		<a href="#" class="addlink">Add link</a>
+		    	</div>	
+		    </div>
+	    </div>
+  	</div>
+  </section>

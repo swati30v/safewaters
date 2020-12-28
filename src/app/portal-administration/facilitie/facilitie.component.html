@@ -1,0 +1,313 @@
+<main>
+  <section class="topsection facilitiessection"> 
+  	<div class="pageinnertab">
+  		<ul>
+  			<li><a routerLink="/portal-administration/facilities" routerLinkActive="active">facilities</a></li>
+  			<li><a routerLink="/portal-administration/river-systems" routerLinkActive="active">river systems</a></li>
+  			<li><a routerLink="/portal-administration/users-permissions" routerLinkActive="active">Users permissions</a></li>
+  		</ul>
+
+	  	<div class="head">
+			<a (click)="openVerticallyCentered(content)"><i class="fa fa-plus-circle"></i> Add Facility</a>
+		</div>
+  	</div>
+  	<div class="Notificationstable shorttable adminportal">
+  		<div class="table-responsive">
+  		  <table class="table">
+  			<thead>
+  			  <tr>
+  				<th>
+  					<label class="customcheck">
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+				</th>
+  				<th ngbDropdown><span ngbDropdownToggle>Facility <i class="fa fa-filter"></i></span>
+		          <div ngbDropdownMenu class="filterdrop">
+		          	<a href="#"><img src="assets/images/ic-sort-asc@2x.png" alt="Sort" />Sort ascending</a>
+		          	<a href="#"><img src="assets/images/ic-sort-desc@2x.png" alt="Sort" />Sort descending</a>
+      				<div class="dropdown-divider"></div>
+      				<div class="Selectcheck"><b>Select all</b> <b>Clear</b></div>
+      				<form action="#">
+				      <i class="fa fa-search" type="submit"></i>
+				      <input type="text" placeholder="Search.." name="search">
+				    </form>
+      				<ul>
+      					<li>
+      						<label class="customcheck">Safe Harbor
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Holtwood
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Holtwood
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Safe Harbor
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Holtwood
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Holtwood
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      					<li>
+      						<label class="customcheck">Holtwood
+							  <input type="checkbox">
+							  <span class="checkmark"></span>
+							</label>
+						</li>
+      				</ul>
+
+      				<div class="dropdown-divider"></div>
+				    <button type="button" class="btn btn-primary" >Ok</button>
+				    <button type="button" class="btn btn-outline-primary">Cancel</button>
+		          </div>
+  				</th>
+  				<th >River System <i class="fa fa-filter"></i></th>
+  				<th >Nearest Town <i class="fa fa-filter"></i></th>
+  				<th>GPS Coordinates <i class="fa fa-filter"></i></th>
+  				<th style="width: 100px;"></th>
+  			  </tr>
+  			</thead>
+  			<tbody>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>
+	  					<label class="customcheck">
+						  <input type="checkbox">
+						  <span class="checkmark"></span>
+						</label>
+  					</td>
+  					<td>Safe Harbor</td>
+  					<td>Androscoggin</td>
+  					<td>New York</td>
+  					<td>55,755831°, 37,617673° </td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="deletefac(deletefaciliti)" >Delete</a>
+			          </div>
+  					</td>
+  				</tr>
+  				
+  				
+  			</tbody>
+  		  </table>
+  		</div>
+  		<div class="paginations">
+  			<p>Rows per page: 4 <i class="fa fa-caret-down"></i></p>
+  			<p>1-4 of 124 <i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></p>
+  		</div>
+  	</div>
+  </section>
+<!-- file modal -->
+<ng-template #deletefaciliti let-modal>
+  	<div class="deletemodal">
+	  <div class="modal-body"> 
+	  	<p>You are about to remove Safe Harbor facility. Are you sure?</p>
+	    <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Cancel</button>
+	    <button type="button" class="btn btn-primary" >Remove</button>
+	  </div>
+	</div>
+</ng-template>
+
+<!-- Add Facility modal -->
+<ng-template #content let-modal>
+  <div class="alertmodal addfacmodal">
+  	<div class="modal-header">
+   		<h4 class="modal-title">Add Facility</h4>    
+  	</div>
+  	<div class="modal-body">
+    	<div class="alertleft">
+    		<div class="form-group">
+			    <label>Facility name</label>
+			    <input type="text" class="form-control" >
+			</div>
+    		<div class="form-group">
+			    <label>River System</label>
+				<select class="form-control" >
+					<option>Androscoggin</option>
+					<option>Rangeley</option>
+					<option>Upper Dam</option>
+					<option>Meddle Dam</option>
+					<option>Errol</option>
+					<option>Pontook</option>
+					<option>Gorham</option>
+				</select>
+			</div>
+    		<div class="form-group">
+			    <label>Nearest Town</label>
+			    <input type="text" class="form-control" >
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+		    		<div class="form-group">
+					    <label>GPS Coordinates (latitude)</label>
+					    <input type="text" class="form-control" >
+					</div>
+				</div>				
+				<div class="col-md-6">
+		    		<div class="form-group">
+					    <label>GPS Coordinates (longtitude)</label>
+					    <input type="text" class="form-control" >
+					</div>
+				</div>
+			</div>  
+    		<div class="alertcheck">
+    			<label class="customradio">Don’t sync 
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="customradio">Sync Current Water Flow Level with USGS
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="customradio">Sync Current Water Flow Level with Azure/Pi
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+    		</div>
+    	</div>	
+  	</div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Cancel</button>
+	    <button type="button" class="btn btn-primary" >Add</button>
+	</div>
+</div>
+</ng-template>
+
+
+</main>

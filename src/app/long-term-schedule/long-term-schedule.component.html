@@ -1,0 +1,194 @@
+<main>
+  <section class="topsection facilitiessection"> 
+  	<div class="pageinnertab">
+  		<ul>
+  			<li><a routerLink="/dashboard/alerts-notifications" routerLinkActive="active">Alerts + Notifications</a></li>
+  			<li><a routerLink="/dashboard/short-term-schedule" routerLinkActive="active">Short Term Schedule</a></li>
+  			<li><a routerLink="/dashboard/long-term-schedule" routerLinkActive="active">Long Term Schedule</a></li>
+  			<li><a routerLink="/dashboard/facility-information" routerLinkActive="active">Facility Information</a></li>
+  		</ul>
+  	</div>
+  	<div class="Notificationstable shorttable">
+  		<div class="head">
+  			<h1>Manual schedule update</h1> 
+  			<a (click)="openVerticallyCentered(content)"><i class="fa fa-plus-circle"></i> Add new Alert/Notification</a>
+  		</div>
+  		<div class="table-responsive">
+  		  <table class="table">
+  			<thead>
+  			  <tr>
+  				<th>Start <i class="fa fa-caret-down"></i></th>
+  				<th >End <i class="fa fa-caret-down"></i></th>
+  				<th >Flow <i class="fa fa-caret-down"></i></th>
+  				<th>Generators <i class="fa fa-caret-down"></i></th>
+  				<th style="width: 100px;"></th>
+  			  </tr>
+  			</thead>
+  			<tbody>
+  				<tr>
+  					<td>10/8/2020  12:00 AM</td>
+  					<td>10/31/2020  11:59 PM</td>
+  					<td>300 CFS</td>
+  					<td>2</td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" href="#">Delete</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>10/8/2020  12:00 AM</td>
+  					<td>10/31/2020  11:59 PM</td>
+  					<td>300 CFS</td>
+  					<td>N/A</td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" href="#">Delete</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			          </div>
+  					</td>
+  				</tr>
+  				<tr>
+  					<td>10/8/2020  12:00 AM</td>
+  					<td>10/31/2020  11:59 PM</td>
+  					<td>300 CFS</td>
+  					<td>2</td>  					
+  					<td ngbDropdown>
+			          <span ngbDropdownToggle><img src="assets/images/more.png" alt="more"></span>
+			          <div ngbDropdownMenu>
+			            <a ngbDropdownItem class="dropdown-item" href="#">Delete</a>
+			            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+			          </div>
+  					</td>
+  				</tr>
+  				
+  			</tbody>
+  		  </table>
+  		</div>
+  		<div class="paginations">
+  			<p>Rows per page: 4 <i class="fa fa-caret-down"></i></p>
+  			<p>1-4 of 124 <i class="fa fa-angle-left"></i> <i class="fa fa-angle-right"></i></p>
+  		</div>
+  	</div>
+  	<div class="shorttermmsg">
+  		<div class="alertleft">
+    		<div class="form-group">
+			    <label>Message</label>
+			    <textarea class="form-control" ></textarea>
+			</div>
+    	</div>		
+  	</div>
+  </section>
+
+
+
+<!-- alert modal -->
+<ng-template #content let-modal>
+  <div class="alertmodal">
+  <div class="modal-header">
+    <h4 class="modal-title">Edit alert</h4>
+    <a href="#">Preview</a>
+    <div class="sharefield">
+    	<label class="switch">
+		  <input type="checkbox">
+		  <span class="slider round"></span>
+		</label>
+		<h6>Share</h6>
+		<p>Share this alert with other facilities within the river system</p>
+    </div>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+    	<div class="col-md-6">  
+    	<div class="alertleft alertlists">
+    		<h1>Facilities (1 of 7 selected)</h1>
+    		<p>Select the facilities in which this alert applies to. To create a bulk alert, toggle the share button.</p>
+    		<ul>
+    			<li>
+    				<label class="customcheck">Androscoggin
+					  <input type="checkbox" checked="checked">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Rangeley
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Upper Dam
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Meddle Dam
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Aziscohos
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Errol
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Pontook
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    			<li>
+    				<label class="customcheck">Gorham
+					  <input type="checkbox">
+					  <span class="checkmark"></span>
+					</label>
+    			</li>
+    		</ul>
+    	</div>  		
+    	</div>
+    	<div class="col-md-6"> 
+    	<div class="alertleft">
+    		<h1>Alert/Notifications</h1>   
+    		<div class="alertcheck">
+    			<label class="customradio">Alert
+				  <input type="radio" checked="checked" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+				<label class="customradio">Notifications
+				  <input type="radio" name="radio">
+				  <span class="checkmark"></span>
+				</label>
+    		</div>
+    		<div class="form-group">
+			    <label>Name</label>
+			    <input type="text" class="form-control" >
+			</div>
+    		<div class="form-group">
+			    <label>Message</label>
+			    <textarea class="form-control" ></textarea>
+			</div>
+    	</div>		
+    	</div>    	
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Cancel</button>
+    <button type="button" class="btn btn-primary" >Save</button>
+  </div>
+</div>
+</ng-template>
+
+
+</main>

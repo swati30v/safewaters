@@ -1,0 +1,172 @@
+<main>
+  <section class="topsection facilitiessection"> 
+  	<div class="pageinnertab">
+  		<ul>
+  			<li><a routerLink="/portal-administration/facilities" routerLinkActive="active">facilities</a></li>
+  			<li><a routerLink="/portal-administration/river-systems" routerLinkActive="active">river systems</a></li>
+  			<li><a routerLink="/portal-administration/users-permissions" routerLinkActive="active">Users permissions</a></li>
+  		</ul>
+
+	  	<div class="head">
+			<a (click)="openVerticallyCentered(content)"><i class="fa fa-plus-circle"></i> Add River System</a>
+		</div>
+  	</div>
+    <div class="listviewbox adminportal">
+      <div class="row m-0">
+        <div class="col-md-7 p-0">
+            <div class="riverlist">
+                <ul>
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>St Regis</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Androscoggin</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Black</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Kennebec</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Little Tennessee</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Penobscot</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Penobscot</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+                    </li> 
+                    <li>
+                        <span>2 <img src="assets/images/wave-icon.png" alt="Systems"></span>
+                        <p><b>Little Tennessee</b> 2 Facilities</p>
+                        <div ngbDropdown>
+				          <label ngbDropdownToggle><img src="assets/images/more.png" alt="more"></label>
+				          <div ngbDropdownMenu>
+				            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)" >Edit</a>
+				            <a ngbDropdownItem class="dropdown-item" href="#" >Delete</a>
+				          </div>
+	  					</div>
+
+                    </li> 
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-5 p-0">
+        	<div class="connectedface">
+	        	<h1>connected Facilities</h1>
+	        	<img src="assets/images/connected-Facilities.png" alt="connected Facilities" />
+	        	<p>Select river system to see connected facilities</p>
+        	</div>
+        	<div class="riverlist connectedlist">
+	        	<h1>connected Facilities</h1>
+                <ul>
+                    <li>
+                        <span><img src="assets/images/water-drops.png" alt="Systems"></span>
+                        <p><b>Safe Harbor</b> <i class="fa fa-map-marker"></i> Near Conestoga, PA</p>
+                    </li> 
+                    <li>
+                        <span><img src="assets/images/water-drops.png" alt="Systems"></span>
+                        <p><b>Holtwood</b> <i class="fa fa-map-marker"></i> Near Holtwood, PA</p>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+      </div>  
+    </div>      
+  </section>
+
+<!-- Add River System modal -->
+<ng-template #content let-modal>
+  <div class="alertmodal addfacmodal">
+  	<div class="modal-header">
+   		<h4 class="modal-title">Add River System</h4>    
+  	</div>
+  	<div class="modal-body">
+    	<div class="alertleft">
+    		<div class="form-group">
+			    <label>River System name</label>
+			    <input type="text" class="form-control" >
+			</div>
+    		<div class="form-group">
+			    <label class="m-0">Facilities</label>
+			    <small>Select objects that belong to this river system</small>
+				<select class="form-control" multiple>
+					<option>Androscoggin</option>
+					<option>Rangeley</option>
+					<option>Upper Dam</option>
+					<option>Meddle Dam</option>
+					<option>Errol</option>
+					<option>Pontook</option>
+					<option>Gorham</option>
+				</select>
+			</div>
+    	</div>	
+  	</div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Cancel</button>
+	    <button type="button" class="btn btn-primary" >Add</button>
+	</div>
+</div>
+</ng-template>
+
+
+</main>
+        

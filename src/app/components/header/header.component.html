@@ -1,0 +1,68 @@
+<main>
+	<section class="headermain">        
+	    <div class="profilebox">
+	        <div class="dropdown" ngbDropdown>
+	          <span class="dropdown-toggle" type="button" ngbDropdownToggle>
+	            <b>Hi, Jones Ferdinand</b> <img src="./assets/images/user.png" alt="user">
+	          </span>
+	          <div class="dropdown-menu" ngbDropdownMenu>
+	            <a ngbDropdownItem class="dropdown-item" (click)="openVerticallyCentered(content)">Account Details</a>
+	            <a ngbDropdownItem class="dropdown-item" href="#">Sign Out</a>
+	          </div>
+	        </div>                        
+	    </div>
+
+	    <h1>Dashboard</h1>
+	    <div class="addfav">
+	        <a href="#"><i class="fa fa-star"></i> Add to Favorites</a>
+	    </div>
+	    <div class="searchbox">
+	        <form>
+	            <input type="text" name="" placeholder="Search River system, Town, or Facility">
+	            <button type="submit"><i class="fa fa-search"></i></button>
+	        </form>       
+	        <button class="favbtns"><i class="fa fa-star"></i></button>           
+	    </div>
+	</section>
+
+<!-- Add Facility modal -->
+<ng-template #content let-modal>
+  <div class="alertmodal addfacmodal">
+  	<div class="modal-header">
+   		<h4 class="modal-title">Account Details</h4>    
+  	</div>
+  	<div class="modal-body changepassword">
+		<div class="form-group">
+	    	<label>Name</label>
+	    	<input type="text" name="name" placeholder="Jones Ferdinand"  class="form-control">
+	    </div>
+		<div class="form-group">
+		    <label>Email</label>
+		    <input type="email" name="email" placeholder="jferdinand@mail.com"  class="form-control">
+		</div>
+		<div class="form-group">
+		    <label>Phone</label>            
+		    <input type="number" name="phone" placeholder="+1234567890"  class="form-control">
+	    </div>
+	    <hr>
+		<div class="form-group">
+	    	<label>New Password</label>
+		    <div class="password">
+		        <input type="password" name="password" placeholder="password"  class="form-control">
+		        <i class="fa fa-eye-slash"></i>
+		        <!-- <i class="fa fa-eye"></i>                 -->
+		    </div>
+		    <div class="confimpassword">
+		        <label>Confim New Password</label>
+		        <input type="password" name="password" placeholder="password"  class="form-control">
+		        <small>New password and comfim new password do not match</small>
+		    </div>
+		</div> 	
+  	</div>
+	<div class="modal-footer">
+	    <button type="button" class="btn btn-outline-primary" (click)="modal.close('Close click')">Cancel</button>
+	    <button type="button" class="btn btn-primary" >Sumbit</button>
+	</div>
+</div>
+</ng-template>
+</main>

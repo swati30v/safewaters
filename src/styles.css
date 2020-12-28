@@ -1,1 +1,1677 @@
-/* You can add global styles to this file, and also import other style files */
+html, body, p, a{
+	font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+   max-width: 100%;
+}
+a:hover{
+	color: #509E2F;
+	text-decoration: none!important;
+}
+/*-------------Login Page-------------------*/
+body {
+    padding: 0px;
+    background-image: url(./assets/images/bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.loginbox {
+    padding: 15px;
+    max-width: 384px;
+    margin: 0 auto;    
+    margin-top: 15vh;
+}
+.loginbox a.logo img {
+    max-width: 50px;
+}
+.loginbox h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #0F3557;
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+.loginbox p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    color: #0F3557;
+}
+.loginbox form input {
+    background: #FFFFFF;
+    border: 1px solid #3581F7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 141.68%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #0F3557;
+    padding: 14px;
+}
+.loginbox form .password {
+    position: relative;
+}
+.loginbox form .password .fa {
+    color: #0f3557;
+    position: absolute;
+    font-size: 20px;
+    right: 15px;
+    top: 14px;
+}
+.loginbox form a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 141.68%;
+    text-align: right;
+    letter-spacing: 0.02em;
+    color: #0F3557;
+    display: block;
+    margin-bottom: 25px;
+}
+.loginbox form input[type="submit"] {
+    background: #3581F7;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    color: #FFFFFF;
+}
+.loginbox a.forgotpass {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 141.68%;
+    letter-spacing: 0.02em;
+    color: #3581F7;
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+/*-------------End Login Page-------------------*/
+header {
+    position: fixed;
+    background: #0F3557;
+    width: 255px;
+    height: 100%;
+}
+main {
+    margin-left: 255px;
+}
+header .logo {
+    text-align: center;
+    display: block;
+    padding: 30px 5px;
+    max-width: 200px;
+    margin: 12px auto 30px auto;
+}
+header .moblogo {
+    display: none;
+}
+header ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+header ul li {
+    text-align: center;
+}
+header ul li a {
+    display: block;
+    text-align: left;
+    padding: 17px 5px;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.2px;
+    color: #A4A6B3;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid rgb(159 162 180 / 0.08);
+}
+header ul li a:hover, header ul li a.active {
+    border-left: 3px solid #3581f7;
+    background: rgb(159 162 180 / 0.08);
+    color: #DDE2FF;
+}
+header ul li a .fa {
+    padding: 0 16px 0 20px;
+}
+.profilebox {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    color: #0F3557;
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    z-index: 9;
+}
+.profilebox span b{
+    font-weight:600; 
+    text-decoration-line: underline;
+}
+.profilebox .dropdown-toggle:after{
+    display: none;
+}
+.profilebox .dropdown-toggle img {
+    width: 44px;
+    height: 44px;
+    border: 1.5px solid #3581F7;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+.profilebox .dropdown-menu a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #0F3557;
+}
+.addfav {
+    padding: 5px 25px;
+}
+.addfav a {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #0F3557;
+}
+.addfav a .fa {
+    color: #fff;
+    background: #509E2F;
+    font-size: 10px;
+    padding: 3px;
+    border-radius: 3px;
+}
+.headermain h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+    color: #052238;
+}
+.headermain {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.searchbox form {
+    background: #FFFFFF;
+    border: 2px solid #3581F7;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin-bottom: 0px;
+    width: 465px;
+    display: inline-block;
+}
+.searchbox form input[type="text"] {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 141.68%;
+    letter-spacing: 0.02em;
+    color: #0F3557;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 9px 15px;
+    width: calc(100% - 44px);
+}
+.searchbox form button {
+    background: #3581F7;
+    border-radius: 7px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125.18%;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 44px;
+    position: absolute;
+}
+button.favbtns {
+    background: #3581F7;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125.18%;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    padding: 10px;
+    width: 44px;
+    height: 44px;
+    margin: 0 10px;
+    text-align: center;
+}
+section.headermain {
+    padding: 30px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(15 53 87 / 10%);
+}
+.listviewbox .row .col-md-5.p-0 {
+}
+.listviewbox .regionslist, .listviewbox .riverlist ul {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+.listviewbox .regionslist li a {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125.18%;
+    color: #0f3557;
+    display: block;
+    padding: 15px 30px;
+    border-top: 1px solid rgb(15 53 87 / 20%);
+    border-right: 6px solid transparent;
+}
+.listviewbox .regionslist li a:hover, .listviewbox .regionslist li a.active {
+    color: #3581f7;    
+    border-right: 6px solid #3581f7;
+}
+.listviewbox h1.headtext {
+        font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    color: #0F3557;
+    margin-bottom: 16px;
+}
+.listviewbox .riverlist ul li {
+    background: #FFFFFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 6px rgba(15, 53, 87, 0.16));
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 18px 16px;
+    cursor: pointer;
+    position: relative;
+    cursor: pointer;
+}
+.listviewbox .riverlist ul li a{
+    display: block;
+}
+.listviewbox .riverlist ul li span {
+    background: #3581F7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 4px 6px;
+    border: 1px solid #3581f7;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    margin-top: 3px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 141.68%;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 16px 0 0;
+}
+.listviewbox .riverlist ul li:hover span {  
+    background: #509E2F;
+    border: 1px solid #509E2F;
+}
+.listviewbox .riverlist ul li span img {
+    display: block;
+    width: 23px;
+    margin: 0 auto;
+}
+.listviewbox .riverlist ul li p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 21px;
+    text-align: justify;
+    color: #4A7A8B;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+.listviewbox .riverlist ul li p b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    color: #052238;
+    display: block;
+}
+.listviewbox .riverlist ul {
+    height: 632px;
+    overflow-y: scroll;
+    padding-right: 15px;
+    padding-bottom: 30px;
+}
+.listviewbox .riverlist ul::-webkit-scrollbar, .mapviewrsystem::-webkit-scrollbar  {
+  width: 6px;
+}
+ 
+.listviewbox .riverlist ul::-webkit-scrollbar-track,
+.mapviewrsystem::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgb(15 53 87 / 20%);
+}
+ 
+.listviewbox .riverlist ul::-webkit-scrollbar-thumb, 
+.mapviewrsystem::-webkit-scrollbar-thumb {
+  background-color: #A4BCC5;
+  outline: 0px solid slategrey;
+}
+.listviewbox .riverlist{
+    padding: 20px 30px;
+    padding-bottom: 0;
+}
+.listviewbox .row .col-md-5.p-0 h1.headtext {
+    padding: 20px 30px 0 30px;
+}
+.listviewbox .riverlist:after {
+    content: '';
+    background: linear-gradient(180deg, rgba(249, 251, 252, 0) 0%, #F9FBFC 100%);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+}
+.backlink {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 125.18%;
+    color: #0F3557;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.backlink .fa {
+    color: #509E2F;
+}
+.viewrecent {
+    margin-bottom: 50px;
+}
+.viewrecent .head {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: left;
+    text-transform: uppercase;
+    color: #0F3557;
+    margin-bottom: 20px;
+}
+.viewrecent .head span {
+    text-transform: capitalize;
+    float: right;
+}
+.viewrecent .head span a {
+    padding-left: 15px;
+}
+.viewrecent .rfacilities {
+    background: #FFFFFF;
+    border-radius: 10px;
+    filter: drop-shadow(0px 2px 6px rgba(15, 53, 87, 0.16));
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 18px 30px 18px 0px;
+    cursor: pointer;
+    position: relative;
+}
+.viewrecent .rfacilities .dropsicon {
+    background: #3581F7;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    padding: 4px 6px;
+    border: 1px solid #3581f7;
+    box-shadow: 0px 0px 0px 1px #fff inset;
+    margin-top: 3px;
+}
+.viewrecent .rfacilities h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    color: #052238;
+    margin: 0;
+}
+.viewrecent .rfacilities p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: #052238;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.viewrecent .rfacilities.other {
+    border: 2px solid #509E2F;
+}
+.viewrecent .rfacilities.other .dropsicon {
+    background: #509E2F;
+    border: 1px solid #509E2F;
+}
+.viewrecent .rfacilities.other:after {
+    color: #509E2F;
+}
+.favbtns .subscribe, .favbtns .subscribed {
+    width: 132px;
+    height: 44px;
+    background: rgb(80 158 47 / 20%);
+    border-radius: 10px;
+    color: #509E2F;
+    border: 1px solid rgb(80 158 47 / 20%);
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125.18%;
+    text-align: center;
+    color: #509E2F;
+    text-transform: uppercase;
+    margin: 0 2px;
+}
+.other .favbtns .subscribe, .other .favbtns .subscribed {
+    background: transparent;
+}
+.favbtns .subscribe:hover{    
+    color: #fff;
+    border: 1px solid #509E2F;
+    background: #509E2F;
+}
+.favbtns .subscribed {
+    color: #3581F7;
+    border: 1px solid rgb(53 129 247 / 20%);
+    background: rgb(53 129 247 / 20%);
+ }
+ .favbtns .subscribed:hover {
+    color: #fff;
+    border: 1px solid #3581F7;
+    background: #3581F7;
+}
+.favbtns {
+    text-align: right;
+}
+.facilitiessection{
+    padding: 30px;
+}
+.pageinnertab ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.pageinnertab ul li{
+    display: inline-block;
+    padding-right: 35px;
+}
+.pageinnertab ul a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #052238;
+    opacity: 0.8;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 4px;
+    text-transform: capitalize;
+}
+.pageinnertab ul a.active {
+    font-weight: bold;
+    opacity: 1;
+    border-bottom: 3px solid #3581F7;
+}
+.pageinnertab ul a:hover{
+    opacity: 1;
+    border-bottom: 3px solid #3581F7;
+}
+.Notificationstable {
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    border-radius: 8px;
+    padding: 17px 0;
+    margin: 23px 0;
+}
+.Notificationstable .head h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    color: #052238;
+    margin: 0;
+    padding-left: 30px;
+    display: inline-block;
+}
+.Notificationstable .head a, .pageinnertab .head a{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #0F3557;
+    float: right;
+    margin-right: 30px;
+    padding-top: 3px;
+    cursor: pointer;
+}
+.Notificationstable .head a .fa, .pageinnertab .head a .fa {
+    color: #509E2F;
+    font-size: 22px;
+    position: relative;
+    top: 4px;
+}
+.Notificationstable .head a .fa.fa-download {
+    color: #fff;
+    background: #3581f7;
+    font-size: 11px;
+    border-radius: 50%;
+    padding: 5px;
+    top: 0px;
+}
+.pageinnertab{
+    position: relative;
+}
+.pageinnertab .head a {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+    width: 43px;
+    height: 24px;
+}
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #DFE3E8;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 22px;
+     width: 22px;
+    left: 0px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    background: #FFFFFF;
+    border: 0.5px solid #E5E5E5;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.switch input:checked + .slider {
+    background-color: #509e2f;
+}
+.switch input:focus + .slider {
+    box-shadow: 0 0 1px #509e2f;
+}
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(21px);
+    -ms-transform: translateX(21px);
+    transform: translateX(21px);
+}
+/* Rounded sliders */
+.switch  .slider.round {
+  border-radius: 34px;
+}
+.switch .slider.round:before {
+  border-radius: 50%;
+}
+.Notificationstable table th {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #fff;
+    background: #3581f7;
+    padding: 11px;
+}
+.Notificationstable table td {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 125.18%;
+    color: #052238;
+    padding: 25px 11px;    
+    border-bottom: 1px solid #DFE0EB;
+}
+.Notificationstable table th:first-child,
+.Notificationstable table td:first-child {
+    padding-left: 30px;
+}
+.Notificationstable table td:last-child {
+    padding: 0px;
+    padding-top: 30px;
+}
+.Notificationstable.shorttable table td:last-child {
+    padding: 0px;
+    padding-top: 22px;
+}
+/*.dropdown:hover .dropdown-menu {
+    display: block;
+}*/
+.Notificationstable table td img{
+    cursor: pointer;
+}
+.Notificationstable table td .dropdown-toggle:after,
+.moreinfolist li .dropdown-toggle:after{
+    display:none;
+}
+.Notificationstable table td .dropdown-menu,
+ .filemodal .modal-body ul li label.dropdown .dropdown-menu, .moreinfolist li .dropdown-menu{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(6, 44, 82, 0.1), 0px 2px 16px rgba(33, 43, 54, 0.08);
+    border-radius: 5px;
+    border: 0;    
+    min-width: 116px;
+    right: 89%!important;
+    left: initial!important;
+}
+.Notificationstable table td .dropdown-item, .moreinfolist li .dropdown-menu  .dropdown-item,
+ .filemodal .modal-body ul li label.dropdown .dropdown-menu .dropdown-item{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #0F3557;
+}
+.Notificationstable .head {
+    margin-bottom: 17px;
+}
+.Notificationstable table button {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 15px;
+    /*display: flex;*/
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #052238;
+    border: 0;
+    background: rgb(53 129 247 / 20%);
+    border-radius: 100px;
+    padding: 5px 18px;
+    outline: none;
+}
+.Notificationstable table td i b {
+    display: block;
+}
+.Notificationstable table td i {
+    display: inline-block;
+    font-style: normal;
+    vertical-align: middle;
+    padding-left: 13px;
+}
+.Notificationstable table tr:nth-child(even) {
+    background: #F1F5FA;
+}
+.Notificationstable .paginations {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    color: #052238;
+    text-align: right;
+}
+.Notificationstable .paginations p {
+    margin: 0;
+    display: inline-block;
+    margin-right: 30px;
+}
+.Notificationstable .paginations p .fa.fa-angle-left, 
+.Notificationstable .paginations p .fa.fa-angle-right {
+    padding: 10px;
+    font-size: 18px;
+}
+.alertmodal {
+    padding: 40px 30px;
+}
+.alertmodal .modal-header {
+    padding: 0;
+    display: block;
+}
+.alertmodal .modal-header .modal-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #052238;    
+    display: inline-block;
+}
+.alertmodal .modal-header a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #3581F7;
+    border: 0;
+    float: right;    outline: none;
+}
+.alertmodal .modal-header .sharefield {
+    padding: 20px 0 20px 0;
+}
+.alertmodal .modal-header .sharefield h6 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #052238;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+.alertmodal .modal-header .sharefield p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgba(37, 39, 51, 0.8);
+    margin: 0;
+}
+.alertmodal .modal-body {
+    padding: 20px 0;
+}
+.alertleft h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+    color: #052238;
+    margin-bottom: 11px;
+}
+.alertleft{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgba(37, 39, 51, 0.8);
+}
+.alertleft ul {
+    list-style-type: none;
+    padding: 0;
+}
+.alertleft ul li {
+    border-bottom: 1px solid #DFE3E8;
+    padding: 1px 0;
+}
+/* The container */
+.customcheck {
+    display: block;
+    position: relative;
+    padding: 14px 0 14px 26px;
+    margin-bottom: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212B36;
+}
+/* Hide the browser's default checkbox */
+.customcheck input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+/* Create a custom checkbox */
+.customcheck .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    background-color: #eee;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+    border: 1px solid #C4CDD5;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 0px rgba(22, 29, 37, 0.05);
+    border-radius: 3px;
+}
+/* On mouse-over, add a grey background color */
+.customcheck:hover input ~ .checkmark {
+      border: 1px solid #509E2F;
+}
+
+/* When the checkbox is checked, add a blue background */
+.customcheck input:checked ~ .checkmark {
+      border: 1px solid #509E2F;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.customcheck .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the checkmark when checked */
+.customcheck input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the checkmark/indicator */
+.customcheck .checkmark:after {
+    left: 4px;
+    top: 2px;
+    width: 6px;
+    height: 9px;
+    border: solid #509E2F;
+    border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* The container */
+.customradio {
+    position: relative;
+    padding-left: 26px;
+    margin-right: 30px;
+    cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #212B36;
+
+}
+
+/* Hide the browser's default radio button */
+.customradio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+/* Create a custom radio button */
+.customradio .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F9FAFB 100%);
+    border: 1px solid #C4CDD5;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 0px rgba(22, 29, 37, 0.05);
+}
+/* On mouse-over, add a grey background color */
+.customradio:hover input ~ .checkmark {
+  border: 1px solid #509e2f;
+}
+/* When the radio button is checked, add a blue background */
+.customradio input:checked ~ .checkmark {
+  border: 1px solid #509e2f;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.customradio .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.customradio input:checked ~ .checkmark:after {
+  display: block;
+}
+/* Style the indicator (dot/circle) */
+.customradio .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #509e2f;
+}
+.alertlists label.customcheck span.checkmark {
+    top: 16px;
+}
+
+.alertleft .form-group label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212B36;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+.alertleft .form-group textarea {
+    height: 307px;
+}
+.alertmodal .modal-footer {
+    padding: 0;
+    padding-top: 30px;
+}
+.alertmodal .modal-footer .btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    width: 132px;
+    padding: 13px;
+}
+.shorttermmsg {
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 20px;
+}
+.filemodal .modal-body {
+    padding: 15px;
+}
+.filemodal .modal-body .modal-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #212B36;
+}
+.filemodal .modal-body ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.filemodal .modal-body ul li {
+    background: rgba(53, 129, 247, 0.15);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #212B36;
+}
+.filemodal .modal-body ul li label.dropdown {
+    margin: 0;
+}
+.filemodal .modal-body ul li label.dropdown .dropdown-toggle:after{
+    display: none;
+}
+.filemodal .modal-body ul li .fa {
+    font-size: 24px;
+    background: rgba(53, 129, 247, 0.24);
+    border-radius: 10px;
+    color: #3581F7;
+    padding: 13px 14px;
+    margin-right: 15px;
+}
+.filemodal .modal-body ul li label.dropdown {
+    margin: 0;
+    float: right;
+    margin-top: 14px;
+}
+.filemodal .modal-body .uploadfile img {
+    display: block;
+    margin: 0 auto;    
+    margin-bottom: 15px;
+}
+.filemodal .modal-body .uploadfile {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #052238;
+    opacity: 0.8;
+    background: rgba(255, 255, 255, 0.62);
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: 20px 0;
+    position: relative;
+    padding: 39px 15px;
+}
+.filemodal .modal-body .uploadfile input[type="file"] {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.filemodal .modal-body .importinfo {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(5, 34, 56, 0.8);
+    display: flex;
+}
+.filemodal .modal-body .importinfo a {
+    color: #509E2F;
+    display: inline-block;
+}
+.filemodal .modal-body .importinfo .fa {
+    font-size: 24px;
+    color: #B9BBC9;
+    margin-right: 10px;
+}
+.filemodal .modal-body .importinfo p {
+    display: inline-block;
+    margin: 0;
+}
+.filemodal .modal-footer {
+    padding: 15px;
+}
+.filemodal .modal-footer .btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    width: 130px;
+    padding: 8px;
+}
+.facilityinfo h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #052238;
+    margin-bottom: 0;
+}
+.facilityinfo .form-group textarea {
+    height: 214px;
+}
+.moreinfolist {
+    margin-top: 15px;
+}
+.moreinfolist li {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 7px rgba(86, 87, 88, 0.25);
+    border-radius: 5px;
+    padding: 15px 20px!important;
+    padding-right: 45px!important;
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+.moreinfolist li p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #052238;
+    margin: 0;
+    padding-right: 10px;
+}
+.moreinfolist li label.dropdown {
+    margin: 0;
+    float: right;
+    position: absolute;
+    right: 15px;
+}
+.alertleft.facilityinfo .addlink {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: right;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    color: #3581F7;
+    display: block;
+}
+.Notificationstable .table .customcheck{
+    padding: 9px 0;
+}
+.Notificationstable .table .dropdown-menu.filterdrop a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    color: #000000;
+    display: block;
+    padding-left: 20px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop a img {
+    width: 20px;
+    margin-right: 10px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop {
+    width: 250px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 10px rgba(196, 205, 213, 0.2);
+    border: 0;
+}
+.Notificationstable .table .dropdown-menu.filterdrop ul label.customcheck {
+    padding: 0px 0 14px 26px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 20px;
+    height: 200px;
+    overflow-x: hidden;
+}
+.Notificationstable .table .dropdown-menu.filterdrop .btn-primary, .Notificationstable .table .dropdown-menu.filterdrop .btn-outline-primary {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 125.18%;
+    text-align: center;
+    color: #FFFFFF;
+    color: #fff;
+    border-color: #007bff;
+    background: #3581F7;
+    border-radius: 5px;
+    margin-left: 20px;
+    border: 2px solid #3581F7;    
+    width: 77px;
+    padding: 6px 4px;    
+    margin-top: 10px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop .btn-outline-primary {
+    color: #3581F7;
+    background: transparent;
+    margin-left: 10px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop .Selectcheck {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    color: #3581F7;
+    padding-left: 20px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop .Selectcheck b{
+    font-weight: normal;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.Notificationstable .table .dropdown-menu.filterdrop form {
+    position: relative;
+    margin: 5px 0 15px 0;
+}
+.Notificationstable .table .dropdown-menu.filterdrop form input[type="text"] {
+    background: #FFFFFF;
+    border: 1px solid #C4CDD5;
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 2px rgba(102, 113, 123, 0.21);
+    border-radius: 3px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 32px;
+    color: #000000;
+    padding: 0;
+    width: 216px;
+    margin-left: 20px;    
+    padding-left: 26px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop form .fa {
+    position: absolute;
+    left: 26px;
+    top: 8px;
+    color: #919eab;
+}
+.Notificationstable table th.dropdown .dropdown-toggle:after{
+    display: none;
+}
+.Notificationstable table th.dropdown .dropdown-menu.filterdrop {
+    padding: 20px 0;
+}
+.deletemodal {
+    padding: 10px;
+    text-align: center;
+}
+.deletemodal p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #0F3557;
+    text-align: left;
+}
+.deletemodal .btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 150px;
+    padding: 11px;
+    margin: 10px;
+}
+.deletemodal .btn-primary {
+    background: #509E2F;
+}
+.addfacmodal .modal-header, .addfacmodal .modal-footer {
+    border: 0!important;
+    padding: 0;
+}
+.addfacmodal .row {
+    margin-right: -5px;
+    margin-left: -5px;
+}
+.addfacmodal .row .col-md-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.adminportal {
+    padding-top: 0;
+    border-top: 0;
+}
+.adminportal .table-responsive {
+    border-radius: 8px 8px 0 0;
+}
+.adminportal .riverlist {
+    padding: 25px 0px;
+}
+.connectedface h1, .connectedlist h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #052238;
+    text-align: left;
+}
+.connectedface, .connectedlist {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    color: #537690;
+    background: #FFFFFF;
+    border: 1px solid #DFE0EB;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 25px;
+}
+.connectedface img {
+    margin: 20px auto;
+}
+.adminportal .riverlist ul li{
+    border: 3px solid transparent;
+}
+.adminportal .riverlist ul li:hover{
+    border: 3px solid #509E2F;
+}
+.adminportal .riverlist ul li:hover span {
+    background: #509E2F;
+    border: 1px solid #509E2F;
+}
+.adminportal .riverlist ul li .dropdown {
+    position: absolute;
+    right: 10px;
+    top: 34%;
+}
+.adminportal .riverlist ul li .dropdown .dropdown-toggle:after{
+    display: none;
+}
+.adminportal .riverlist ul li .dropdown .dropdown-menu {
+    right: 20px!important;
+    left: initial!important;
+    top: 0!important;
+    transform: translate(0px)!important;
+    min-width: 100px!important;
+    border: 0;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 0px rgba(6, 44, 82, 0.1), 0px 2px 16px rgba(33, 43, 54, 0.08);
+    border-radius: 5px;
+}
+.adminportal .riverlist ul li .dropdown .dropdown-menu .dropdown-item {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: #0F3557;
+    padding: 1px 15px;
+}
+.adminportal .connectedlist {
+    padding: 20px;
+    text-align: left;
+}
+.adminportal .connectedlist ul {
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 20px;
+}
+.adminportal .connectedlist ul li {
+    border: 0!important;
+    box-shadow: none;
+    filter: initial;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.adminportal .connectedlist ul li span img {
+    padding-top: 4px;
+}
+.adminportal .connectedlist ul li p{
+    font-size: 14px;
+    line-height: 21px;
+    text-align: justify;
+    color: #052238;
+    opacity: 0.8;
+}
+.adminportal .connectedlist ul li p .fa {
+    opacity: .5;
+}
+.alertleft .form-group small {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: rgba(37, 39, 51, 0.8);
+    display: block;
+    margin-bottom: 8px;
+}
+.Notificationstable .table .dropdown-menu.filterdrop.userfilter ul {
+    overflow: hidden;
+    height: auto;
+}
+.addusermodal .alertleft .form-group .checklabel label.customcheck {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 125.18%;
+    color: #052238;
+    padding: 1px;
+    padding-left: 27px;
+    display: inline-block;
+    margin: 5px 0;
+    width: 37%;
+}
+.addusermodal .modal-header, .addusermodal .modal-footer{
+    padding:0;
+    border:0;
+}
+.form-group {
+    margin-bottom: 5px!important;
+}
+.editperhead h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.3px;
+    color: #052238;
+    margin: 0;
+}
+.editpermtable .viewrecent {
+    margin-bottom: 0;
+}
+.editpermtable .viewrecent .backlink {
+    margin-bottom: 10px;
+}
+.editperhead {
+    position: relative;
+}
+.editperhead label.customcheck {
+    padding: 0;
+    padding-left: 25px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+}
+.editpermtable .Notificationstable table {
+    text-align: center;
+}
+.editpermtable .Notificationstable table th, .editpermtable .Notificationstable table td {
+    border: 1px solid #DFE0EB;
+}
+.editpermtable .Notificationstable table tr.tophead th {
+    text-transform: uppercase;
+}
+.editpermtable .Notificationstable table tr.edithead th {
+    background: rgba(53, 129, 247, 0.09);
+    color: #3581f7;
+    text-align: center;
+}
+.editpermtable .Notificationstable table tr.lasthead th {
+    background: #fff;
+    color: #000;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #052238;
+}
+.editpermtable .Notificationstable table tr.lasthead th:first-child,
+.editpermtable .Notificationstable table td:first-child{
+    text-align: left;
+}
+.editpermtable .Notificationstable table td .customcheck .checkmark{
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+.changepassword {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 30px 15px;
+}
+.changepassword h1 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #052238;
+    margin-bottom: 20px;
+}
+.changepassword label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212B36;
+    margin-bottom: 2px;
+}
+.changepassword hr {
+    margin-top: 26px;
+}
+.changepassword .form-control {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #212B36;
+    padding: 8px;
+    height: 36px;
+    background: #FFFFFF;
+    border: 1px solid #C4CDD5;
+    box-sizing: border-box;
+    box-shadow: inset 0px 1px 2px rgba(102, 113, 123, 0.21);
+    border-radius: 3px;
+    padding: 7px;
+}
+.changepassword .form-group {
+    margin-bottom: 15px!important;
+}
+.changepassword .password {
+    position: relative;    
+    margin-bottom: 15px;
+}
+.changepassword .password .fa {
+    color: #0f3557;
+    position: absolute;
+    font-size: 20px;
+    right: 12px;
+    top: 9px;
+}
+.changepassword .confimpassword small {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 20px;
+    color: #509E2F;
+}
+.changepassword  .btn-primary {
+    background: #3581F7;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 30px;
+    margin-top: 20px;
+}
+@media (min-width: 1200px) and (max-width: 1400px){
+    .searchbox form{width: 300px;}
+}
+@media (min-width: 1025px) and (max-width: 1199px){   
+    .searchbox {    margin-left: 0;    width: 100%;margin-top: 15px;}
+    .searchbox form {   width: calc(100% - 90px);    display: inline-block;}
+}
+@media (min-width: 768px) and (max-width: 1024px){
+    header{width: 200px;}
+    main { margin-left: 200px;}
+    header ul li a .fa {    padding: 0 3px 0 10px;}
+	header ul li a{font-size: 14px;}
+    header .logo {    max-width: 160px;    margin: 10px auto 10px auto;}
+    .searchbox {    margin-left: 0;    width: 100%;margin-top: 15px;}
+    section.headermain {    padding: 30px 15px;}
+    .profilebox{right: 15px;}
+    .searchbox form {   width: calc(100% - 90px);    display: inline-block;}
+    .listviewbox .riverlist {    padding: 20px 15px;}
+    .listviewbox .row .col-md-5.p-0 h1.headtext {    padding: 20px 15px 0 15px;}
+    .listviewbox .regionslist li a{    padding: 15px;}
+    section.topsection {    padding: 15px;}
+    .pageinnertab ul li {    padding-right: 15px;}
+    .Notificationstable .head h1{padding-left: 15px;}
+    .Notificationstable .head a, .pageinnertab .head a{    margin-right: 15px;}
+    .Notificationstable table th:first-child, .Notificationstable table td:first-child {
+    padding-left: 15px;}
+    .Notificationstable .paginations p:last-child{   margin-right: 15px;}
+    /*.modal-dialog {    max-width: 750px!important;}*/
+    .shorttermmsg {padding: 15px;}
+}
+
+@media (max-width: 767px){
+    header{width: 70px;}
+    main { margin-left: 70px;}
+    header .logo {display: none;}
+    header .moblogo {display: block;padding: 30px 5px; max-width: 60px;  margin: 0 auto;}
+	.loginbox{    margin-top: 6vh;}
+    header ul li a {    font-size: 0;text-align: center;}
+    header ul li a .fa {    font-size: 26px;    padding: 0;}
+    .searchbox {    margin-left: 0;    width: 100%;margin-top: 15px;}
+    section.headermain {    padding: 30px 15px;}
+    .profilebox {  right: 15px;  position: initial;  width: 100%;}
+    .searchbox form {   width: calc(100% - 90px);    display: inline-block;}
+    .listviewbox .riverlist {    padding: 20px 15px;}
+    .listviewbox .row .col-md-5.p-0 h1.headtext {    padding: 20px 15px 0 15px;}
+    .listviewbox .regionslist li a{    padding: 15px;}
+    section.topsection {    padding: 15px;}
+    .viewrecent .rfacilities{text-align: center;}
+    .viewrecent .rfacilities .dropsicon{    margin: 6px auto;}
+    .viewrecent .rfacilities p{margin-bottom: 10px;}
+    .favbtns .subscribe, .favbtns .subscribed { width: 116px; height: 40px;  font-size: 14px;}    
+    .pageinnertab ul li {    padding-right: 15px;}
+    .Notificationstable .head h1{padding-left: 15px;}
+    .Notificationstable .head a, .pageinnertab .head a{    margin-right: 0px;float: none; display: block; text-align: center;}
+    .Notificationstable table th:first-child, .Notificationstable table td:first-child {
+    padding-left: 15px;}
+    .Notificationstable .paginations p{display: block;  margin-right: 0; text-align: center;}
+    .alertmodal {    padding: 25px 15px;}
+    .alertmodal .modal-footer .btn, .filemodal .modal-footer .btn {  width: 120px;    padding: 8px;}
+    .pageinnertab ul li {  margin-bottom: 10px;    margin-top: 5px;}
+    .shorttermmsg {padding: 15px;}
+    .pageinnertab .head a {   position: initial;    margin-top: 10px;}
+    .editperhead label.customcheck {   position: relative;  }
+}
+
+@media (max-width: 420px){
+    .addfav {padding: 0;display: block;width: 100%;}
+    button.favbtns{    margin: 0 2px;}
+    .searchbox form {  width: calc(100% - 54px);}
+    .searchbox form input[type="text"]{padding: 9px;}
+    .adminportal .riverlist ul li .dropdown {    right: 0px;}
+}
