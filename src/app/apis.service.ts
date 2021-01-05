@@ -17,9 +17,9 @@ export class ApisService {
      email,
      password,  
      deviceToken:"xwdd",
-    
+     
    };  
-  // console.log(obj);  
+    
   return this.http.post(`${this.REST_API}`, obj)  
      
  }  

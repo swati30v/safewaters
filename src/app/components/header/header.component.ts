@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import { Router } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
 	  logout() {
         // remove user from local storage and set current user to null
         localStorage.removeItem('user');
-        this. router.navigate(['/login']);
+        this.router.navigate(['/login']);
     }
 
 }

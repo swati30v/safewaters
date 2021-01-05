@@ -21,7 +21,6 @@ export class LoginComponent implements OnInit {
     email: ['', [Validators.required, Validators.email]],
     password: ['', [Validators.required]],
   });
-  //localStorage.setItem('SeesionUser', this.user)
 }
 // getter for easy access to form fields
 get f() { return this.registerForm.controls; }
@@ -41,12 +40,11 @@ onSubmit() {
       console.log( "res", res)
       if(res) { 
         if (res.data) {
-          this.isCredentialsExist = true;
-        } else {
-         // console.log( "res", res.length )
-        localStorage.setItem("SeesionUser",this.user)
+         localStorage.setItem("SeesionUser",this.user)
         this.router.navigate(['/dashboard']);
         this.isCredentialsExist = false;
+        } else {
+           this.isCredentialsExist = true;
         }
       }
       

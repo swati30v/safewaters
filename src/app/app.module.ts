@@ -22,6 +22,8 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AuthguradService} from './authgurad.service'
+import { AuthenticationGuard } from './authentication.guard';
+import { RegionsComponent } from './portal-administration/regions/regions.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import { AuthguradService} from './authgurad.service'
     UsersPermissionsComponent,
     FacilitieComponent,
     EditPermissionsComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    RegionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,7 @@ import { AuthguradService} from './authgurad.service'
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ AuthguradService
+  providers: [ AuthguradService , AuthenticationGuard
   ],
   bootstrap: [AppComponent]
 })

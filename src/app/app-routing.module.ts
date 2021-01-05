@@ -15,10 +15,10 @@ import { UsersPermissionsComponent } from './portal-administration/users-permiss
 import { EditPermissionsComponent } from './portal-administration/edit-permissions/edit-permissions.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import {AuthenticationGuard} from './authentication.guard';  
+import { RegionsComponent } from './portal-administration/regions/regions.component';
 
 const routes: Routes = [
-    { path: '',redirectTo:"/login",pathMatch:'full'},
-	  //{ path: '', component: LoginComponent },
+    { path: '', redirectTo:"/login",pathMatch:'full'},
     { path:  'dashboard',  component:  DashboardComponent, canActivate:[AuthenticationGuard]},
     { path:  'login',  component:  LoginComponent},
     { path:  'forgot-password',  component:  ForgotPasswordComponent},
@@ -33,6 +33,9 @@ const routes: Routes = [
     { path:  'portal-administration/users-permissions',  component:  UsersPermissionsComponent},
     { path:  'portal-administration/users-permissions/edit-permissions',  component:  EditPermissionsComponent},
     { path:  'change-password',  component:  ChangePasswordComponent},
+    { path:  'portal-administration/regions',  component:  RegionsComponent},
+    
+
 ];
 
 @NgModule({
