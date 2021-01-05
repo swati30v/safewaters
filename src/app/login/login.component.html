@@ -2,14 +2,25 @@
     <a routerLink="/dashboard" class="logo"><img src="./assets/images/logo-small.png" alt="Safe-waters"></a>
     <h1>SIGN IN</h1>
     <p>Log in to your personal account to use our admin panel</p>
-    <form>
-        <input type="email" name="email" placeholder="Email">
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+
+        <input type="email" name="email" placeholder="Email" formControlName="email" class="form-control"
+            [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+        <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email Id is required</div>
+        </div>
         <div class="password">
-            <input type="password" name="password" placeholder="password">
-            <i class="fa fa-eye-slash"></i>
+            <input type="password" name="password" placeholder="password" formControlName="password"
+                class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
+            <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                <div *ngIf="f.password.errors.required">password is required</div>
+            </div>
+            <div class="error" *ngIf="isCredentialsExist">please Enter correct credentials</div>
+
+            <!-- <i class="fa fa-eye-slash"></i> -->
             <!-- <i class="fa fa-eye"></i>                 -->
         </div>
-        <a  routerLink="/forgot-password">Recovery password</a>
+        <a routerLink="/forgot-password">Recovery password</a>
         <input type="submit" name="" value="LOG IN">
     </form>
     <a routerLink="/forgot-password" class="forgotpass">Forgot password?</a>

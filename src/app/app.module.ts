@@ -19,6 +19,9 @@ import { UsersPermissionsComponent } from './portal-administration/users-permiss
 import { FacilitieComponent } from './portal-administration/facilitie/facilitie.component';
 import { EditPermissionsComponent } from './portal-administration/edit-permissions/edit-permissions.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { AuthguradService} from './authgurad.service'
 
 @NgModule({
   declarations: [
@@ -42,9 +45,13 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
   ],
-  providers: [],
+  providers: [ AuthguradService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

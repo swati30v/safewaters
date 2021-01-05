@@ -14,10 +14,12 @@ import { RiverSystemsComponent } from './portal-administration/river-systems/riv
 import { UsersPermissionsComponent } from './portal-administration/users-permissions/users-permissions.component';
 import { EditPermissionsComponent } from './portal-administration/edit-permissions/edit-permissions.component';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import {AuthenticationGuard} from './authentication.guard';  
 
 const routes: Routes = [
-	{ path: '', component: LoginComponent },
-    { path:  'dashboard',  component:  DashboardComponent},
+    { path: '',redirectTo:"/login",pathMatch:'full'},
+	  //{ path: '', component: LoginComponent },
+    { path:  'dashboard',  component:  DashboardComponent, canActivate:[AuthenticationGuard]},
     { path:  'login',  component:  LoginComponent},
     { path:  'forgot-password',  component:  ForgotPasswordComponent},
     { path:  'dashboard/facilities',  component:  FacilitiesComponent},
