@@ -30,7 +30,6 @@ onSubmit() {
   // stop here if form is invalid
   if (this.registerForm.invalid) {
     return;
-
   }
   this.ApisService.login(
   this.registerForm.value.email,
@@ -40,7 +39,7 @@ onSubmit() {
       console.log( "res", res)
       if(res) { 
         if (res.data) {
-         localStorage.setItem("SeesionUser",this.user)
+        localStorage.setItem("SeesionUser",this.user)
         this.router.navigate(['/dashboard']);
         this.isCredentialsExist = false;
         } else {

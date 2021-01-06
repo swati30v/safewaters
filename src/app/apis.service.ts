@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApisService {
 
-  REST_API = 'http://3.17.34.74:3000/api/signIn'; // SIGN IN API 
+  REST_API = 'http://3.17.34.74:3000/api/signIn'; // SIGN IN API
+  REST_API_SERVER = 'http://3.17.34.74:3000/api/region'; // GET API OF REGION 
 
   constructor(private http: HttpClient) { }
    
@@ -18,10 +19,11 @@ export class ApisService {
      password,  
      deviceToken:"xwdd",
      
-   };  
-    
+   };      
   return this.http.post(`${this.REST_API}`, obj)  
      
  }  
+
+ 
 
 }

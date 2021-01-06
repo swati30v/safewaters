@@ -13,6 +13,7 @@ constructor(private Authguardservice: AuthguradService, private router: Router) 
 canActivate(): boolean {  
   console.log(this.Authguardservice.gettoken())
     if (!this.Authguardservice.gettoken()) {  
+      console.log(this.Authguardservice.gettoken())
         this.router.navigateByUrl("/login");  
     }  
     return this.Authguardservice.gettoken();  

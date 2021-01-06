@@ -2,14 +2,14 @@
   <section class="topsection facilitiessection"> 
   	<div class="pageinnertab">
   		<ul>
-			<li><a routerLink="/portal-administration/regions" routerLinkActive="active">Regions</a></li>
   			<li><a routerLink="/portal-administration/facilities" routerLinkActive="active">facilities</a></li>
   			<li><a routerLink="/portal-administration/river-systems" routerLinkActive="active">river systems</a></li>
-  			<li><a routerLink="/portal-administration/users-permissions" routerLinkActive="active">Users permissions</a></li>
+			<li><a routerLink="/portal-administration/regions" routerLinkActive="active">Regions</a></li>
+			<li><a routerLink="/portal-administration/users-permissions" routerLinkActive="active">Users permissions</a></li>
   		</ul>
 
 	  	<div class="head">
-			<a (click)="openVerticallyCentered(content)"><i class="fa fa-plus-circle"></i> Add Regions</a>
+			<a (click)="openVerticallyCentered(content)"><i class="fa fa-plus-circle"></i> Add Region</a>
 		</div>
   	</div>
     <div class="listviewbox adminportal">
@@ -138,12 +138,12 @@
 <ng-template #content let-modal>
   <div class="alertmodal addfacmodal">
   	<div class="modal-header">
-   		<h4 class="modal-title">Add Regions</h4>    
+   		<h4 class="modal-title">Add Region</h4>    
   	</div>
   	<div class="modal-body">
     	<div class="alertleft">
     		<div class="form-group">
-			    <label>Regions name</label>
+			    <label>Region name</label>
 			    <input type="text" class="form-control" >
 			</div>
     		<div class="form-group">
