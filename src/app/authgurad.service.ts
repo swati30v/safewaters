@@ -7,10 +7,10 @@ import { AbstractControlDirective } from '@angular/forms';
 export class AuthguradService {
 
   constructor() { }
-   
+
   gettoken() {
-    return !! localStorage.getItem("SeesionUser")
- 
+    return !!localStorage.getItem("SeesionUser")
+
   }
 
 }

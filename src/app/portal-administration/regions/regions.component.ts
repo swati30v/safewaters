@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators, FormControl} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { ApisService } from 'src/app/Apis.service';
+import { ConfirmDialogService } from 'src/app/confirm-dialog.service';  
 
 
 @Component({
@@ -13,10 +14,16 @@ import { ApisService } from 'src/app/Apis.service';
 })
 export class RegionsComponent implements OnInit  {
 	closeResult: string;
-  	constructor(private modalService: NgbModal, private formBuilder: FormBuilder, private router: Router, private http: HttpClient, private ApisService: ApisService) {}
+	  constructor(private modalService: NgbModal, private formBuilder: FormBuilder, private router: Router, private http: HttpClient, private ApisService: ApisService, private confirmDialogService: ConfirmDialogService) {}
 
 	openVerticallyCentered(content) {
 	    this.modalService.open(content, { centered: true,  size: 'md'  });
+	}
+	public openConfirmationDialog() {
+		this.confirmDialogService.confirm('','')
+		// .then((confirmed) => console.log( confirmed))
+		// .catch(() => console.log('User dismissed the dialog (e.g., by using ESC, clicking the cross icon, or clicking outside the dialog)'));
+		
 	}
 	
   	ngOnInit() {  }

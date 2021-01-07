@@ -1,0 +1,18 @@
+
+.btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125.18%;
+    text-align: center;
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 150px;
+    padding: 11px;
+    margin: 10px;
+}
+.deletemodal {
+    padding: 17px;
+    text-align: center;
+}

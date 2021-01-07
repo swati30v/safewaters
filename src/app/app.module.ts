@@ -24,6 +24,8 @@ import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { AuthguradService} from './authgurad.service'
 import { AuthenticationGuard } from './authentication.guard';
 import { RegionsComponent } from './portal-administration/regions/regions.component';
+import { ConfirmationDialogComponent } from './confirmation-dialog/confirmation-dialog.component';
+import { ConfirmDialogService } from './confirm-dialog.service';
 
 @NgModule({
   declarations: [
@@ -44,6 +46,7 @@ import { RegionsComponent } from './portal-administration/regions/regions.compon
     EditPermissionsComponent,
     ChangePasswordComponent,
     RegionsComponent,
+    ConfirmationDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -53,8 +56,7 @@ import { RegionsComponent } from './portal-administration/regions/regions.compon
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ AuthguradService , AuthenticationGuard
-  ],
+  providers: [ AuthguradService , AuthenticationGuard,ConfirmDialogService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
